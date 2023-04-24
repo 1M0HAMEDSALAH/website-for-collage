@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 200px;
+
+}
+
+.name {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 2em;
+    transition: 0.7s ease;
+}
+.name:hover{
+    color: #332B47;
+    transform: scale(1.1);
+}
+
+.navagation a{
+    text-decoration: none;
+    color: #752126;
+    padding: 10px;
+}
+
+.navagation a:hover{
+    color: #8F81B3;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/8520.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color: rgb(255, 255, 255);
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(124, 124, 124);
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3 {
+    color: rgb(137, 128, 128);
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: rgb(255, 0, 0);
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    transition: 1s ease;
+}
+
+.main-btn:hover {
+    background-color: rgb(104, 89, 89);
+    transform: scale(1.1);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    font-weight: 800;
+    color: #752126;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cards{
+    background: #0C1520;
+}
+
+.card {
+    background-color: #8E9599;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+.info h3{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 1.2em;
+    margin: 15px;
+}
+
+
+.Projects {
+    background-color: #0C1520;
+}
+
+.projects .content {
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(198, 198, 198);
+    min-height: 10em;
+    width: 20em;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    transition: 1s ease;
+    box-shadow: 0 5px 20px red;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-image img {
+    width: 100%;
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.part-project {
+    font-size: 0.8em;
+    color: rgb(255, 255, 255);
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+    color: #A5B381;
+}
+
+.for-details {
+    text-decoration: none;
+    color: rgb(255, 13, 13);
+}
+
+.for-details:hover {
+    color: brown;
+}
+
+.card-contact {
+    background-color: rgb(255, 255, 255);
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    flex-direction: row;
+}
+
+.footer {
+    background-color: #000016;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #3a6cf4;
+}
+
+.footer .social-icons a {
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+    color: #fff;
+}
+@media(max-width:1000px){
+         *{
+            font-size: 95%;
+         }
+}
+@media(max-width:600px) {
+    * {
+        font-size: 80%;
+    }
+}
+@media(max-width:400px) {
+    * {
+        font-size: 60%;
+    }
+}
